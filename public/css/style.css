@@ -1,0 +1,213 @@
+body
+{
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ffffff;
+    background-color: #CCCCCC;
+    margin:0rem;
+}
+.nav-container {
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: #0076bb;
+  flex-direction: column;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.nav-container.transparent {
+  background-color: rgba(0, 118, 187, 0.2); /* Adjust the transparency level as needed */
+}
+
+
+.nav-container a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-container a:hover {
+  color: #fec13e;
+}
+
+.nav-container img {
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.nav-container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-container li {
+  margin-right: 1rem;
+}
+
+.nav-container li:last-child {
+  margin-right: 0;
+}
+
+.nav-container li a {
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 0px;
+    height: 25vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-container ul {
+    
+    text-align: center;
+  }
+}
+/*slider*/
+.slider-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 15s ease;
+}
+
+.slide {
+  position: relative;
+  width: 100%;
+}
+
+.slide img {
+  max-width: 100%; /* Use max-width instead of fixed width */
+  height: auto;
+}
+
+.slide-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.slide-caption h3 {
+  font-size: 3rem;
+  margin-bottom: auto;
+}
+
+.slide-caption p {
+  font-size: 1.6rem;
+}
+
+/*Adoption card*/
+.adoption-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.card {
+  position: relative;
+  width: 11rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card-image img {
+  width: 11rem;
+  height: 8rem;
+  border-radius: 0.9rem;
+  object-fit: cover;
+}
+
+.card-overlay {
+  display: none;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+}
+
+.card:hover .card-overlay,.adoption-cards .card:hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fec13e;
+  color: #fff;
+  opacity: 1;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+th {
+  padding: 0rem;
+  border-bottom:  solid black;
+}
+td{
+  padding: 0rem;
+}
+.border-right
+{
+  border-right: solid black;
+  
+}
+.space-left
+{
+  padding-left:0.3rem;
+}
+h3
+{
+  margin:0.1rem;
+}
+
+.card-details {
+  color:black;
+  padding-top:1rem;
+  display: flex;
+  flex-direction: column;
+  height: 18rem;
+  padding-left: 0.4rem;
+  position: relative; 
+}
+.general-description
+{
+  display: none;
+}
+
+/*
+@media screen and (max-width: 768px) {
+  .card {
+    width: 28%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 57%;
+  }
+}
+*/

@@ -1,0 +1,15 @@
+<div class="slider-container">
+    
+        <div class="slider">
+            {{#each sliderData}}
+            <div class="slide">
+                <img src="{{this.Source}}" alt="{{this.AltText}}">
+                <div class="slide-caption">
+                    <h3>{{this.Header}}</h3>
+                    <p>{{this.Text}}</p>
+                </div>
+            </div>
+             {{/each}}
+        </div>
+        
+    </div>

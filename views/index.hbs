@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Meow Page</title>
+    <link rel="stylesheet" href="/common/css/style.css">
+    
+</head>
+<body>
+    {{>navbar data=navbardetails}}
+    <script src="/common/js/navbar.js"></script>
+    {{>slider sliderData=slider}}
+    <script src="/common/js/slider.js"></script>
+    {{>adoptioncard petdata=petdetail}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <script src="/common/js/adoptioncard.js"></script>
+</body>
+</html>

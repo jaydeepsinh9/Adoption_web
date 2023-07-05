@@ -1,0 +1,9 @@
+<div class="nav-container">
+<a href="/"><img src="{{data.clogo}}" height="40" width="40" display="inline-block" border-radius="50%" align-text="top">{{data.cname}}</a>
+<nav></nav>
+<ul>
+    {{#each data.links}}
+    <li><a href="{{this.url}}">{{this.label}}</a></li>
+    {{/each}}
+</ul>
+</div>

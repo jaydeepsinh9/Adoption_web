@@ -1,0 +1,31 @@
+<div class="adoption-cards">
+  {{#each petdata}}
+  <a src="/petid">
+  <div class="card">
+      <div class="card-image">
+        <img src="{{this.petImage}}" alt="{{this.petName}}">
+      </div>
+      <div class="card-details">
+        <h3>{{this.petName}}</h3>
+    <table>
+    <tr>
+      <th>Likes</th>
+      <th>Dislikes</th>
+    </tr>
+    <tr>
+      <td class="border-right">{{this.petLike}}</td>
+      <td class="space-left">{{this.petDislike}}</td>
+    </tr>
+  </table>
+        <div class="general-description">
+          <b>Gender:</b> {{this.petGender}}<br>
+            <b>Breed:</b> {{this.petBreed}}<br>
+            <b>Age:</b> {{this.petAge}}<br>
+            <b>Animal Id:</b> {{this.petID}}<br>
+            <b>Location:</b> {{this.petLocation}}
+        </div>
+      </div>
+  </div>
+  {{/each}}
+  </a>
+</div>
